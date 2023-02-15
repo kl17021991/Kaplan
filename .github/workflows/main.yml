@@ -1,4 +1,9 @@
-- name: Lighthouse Audit
-  # You may pin to the exact commit or the version.
-  # uses: jakejarvis/lighthouse-action@a3bcc9973b3ce65beff316b3cac53b92e58dcc12
-  uses: jakejarvis/lighthouse-action@v0.3.2
+- name: auditor-action
+# You may pin to the exact commit or the version.
+# uses: GrantBirki/auditor-action@f8940c96520a64fdd1b693baa0fe9f5f869a0e55
+uses: GrantBirki/auditor-action@v2.0.4
+with:
+# The path to the auditor's config file
+config: # default is auditor.yml
+# The path to the json diff file
+json_diff_path: # default is git-diff-action-output.json
